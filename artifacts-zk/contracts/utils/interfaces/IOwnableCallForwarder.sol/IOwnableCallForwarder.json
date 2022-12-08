@@ -1,0 +1,36 @@
+{
+  "_format": "hh-zksolc-artifact-1",
+  "contractName": "IOwnableCallForwarder",
+  "sourceName": "contracts/utils/interfaces/IOwnableCallForwarder.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "forwardTarget",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "forwardedCalldata",
+          "type": "bytes"
+        }
+      ],
+      "name": "forwardCall",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "returnedData",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "factoryDeps": {}
+}

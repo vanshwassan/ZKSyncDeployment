@@ -1,0 +1,51 @@
+{
+  "_format": "hh-zksolc-artifact-1",
+  "contractName": "IWhitelistRoles",
+  "sourceName": "contracts/whitelist/interfaces/IWhitelistRoles.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "INDEFINITE_WHITELISTER_ROLE_DESCRIPTION",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "WHITELIST_EXPIRATION_EXTENDER_ROLE_DESCRIPTION",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "WHITELIST_EXPIRATION_SETTER_ROLE_DESCRIPTION",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "factoryDeps": {}
+}

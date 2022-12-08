@@ -1,0 +1,2597 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/Greeter.sol": {
+      "lastModificationDate": 1670342095543,
+      "contentHash": "f97d4c5725146bd23001a8653a124f6c",
+      "sourceName": "contracts/Greeter.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Greeter"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/access-control-registry/AccessControlRegistry.sol": {
+      "lastModificationDate": 1670344429531,
+      "contentHash": "ca0e47adff706ca1fa04cef240fbb8b6",
+      "sourceName": "contracts/access-control-registry/AccessControlRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Multicall.sol",
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "./RoleDeriver.sol",
+        "./interfaces/IAccessControlRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "AccessControlRegistry"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/access-control-registry/RoleDeriver.sol": {
+      "lastModificationDate": 1670343167885,
+      "contentHash": "38e91971a27127a407e55a8f0c2a8f16",
+      "sourceName": "contracts/access-control-registry/RoleDeriver.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RoleDeriver"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/access-control-registry/interfaces/IAccessControlRegistry.sol": {
+      "lastModificationDate": 1670343167888,
+      "contentHash": "ddae4489689d8833eb62afcab4bf513e",
+      "sourceName": "contracts/access-control-registry/interfaces/IAccessControlRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/IAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControlRegistry"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/node_modules/@openzeppelin/contracts/access/AccessControl.sol": {
+      "lastModificationDate": 1670343523992,
+      "contentHash": "95a6c227d1b8843e9385518a5bce4853",
+      "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControl.sol",
+        "../utils/Context.sol",
+        "../utils/Strings.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/node_modules/@openzeppelin/contracts/utils/Multicall.sol": {
+      "lastModificationDate": 1670343523992,
+      "contentHash": "8a997d859de7e871118021136bb5094e",
+      "sourceName": "@openzeppelin/contracts/utils/Multicall.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Multicall"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/node_modules/@openzeppelin/contracts/access/IAccessControl.sol": {
+      "lastModificationDate": 1670343523992,
+      "contentHash": "57c84298234411cea19c7c284d86be8b",
+      "sourceName": "@openzeppelin/contracts/access/IAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControl"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1670343523992,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1670343523992,
+      "contentHash": "396031251978f8febfd90cb62cb240ec",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1670343524031,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1670343524031,
+      "contentHash": "b9c58920ce74d6dc819161786112e7ee",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1670343524031,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1670343523992,
+      "contentHash": "f31ad6fc4bbf9c06203987220156a6ba",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/utils/OwnableCallForwarder.sol": {
+      "lastModificationDate": 1670344557106,
+      "contentHash": "e3a8c0bee1b500587887bb5a6241477e",
+      "sourceName": "contracts/utils/OwnableCallForwarder.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/Address.sol",
+        "./interfaces/IOwnableCallForwarder.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "OwnableCallForwarder"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/utils/interfaces/IOwnableCallForwarder.sol": {
+      "lastModificationDate": 1670343168002,
+      "contentHash": "2db61f2336ae87dccd8b9c050d6edd6a",
+      "sourceName": "contracts/utils/interfaces/IOwnableCallForwarder.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOwnableCallForwarder"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1670343523992,
+      "contentHash": "e436cea06129be2c73cda4b1acc848b5",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/node_modules/@openzeppelin/contracts/utils/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1670343523992,
+      "contentHash": "fe1190dbb6431c2464246925713f0f7f",
+      "sourceName": "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/AirnodeRrpV0.sol": {
+      "lastModificationDate": 1670418342356,
+      "contentHash": "87cd002ab4b22a118b958f5699806ea3",
+      "sourceName": "contracts/rrp/AirnodeRrpV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+        "./AuthorizationUtilsV0.sol",
+        "./TemplateUtilsV0.sol",
+        "./WithdrawalUtilsV0.sol",
+        "./interfaces/IAirnodeRrpV0.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "AirnodeRrpV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/AuthorizationUtilsV0.sol": {
+      "lastModificationDate": 1670343167948,
+      "contentHash": "9116574cb5eb0d482d0fd11f6a655bb1",
+      "sourceName": "contracts/rrp/AuthorizationUtilsV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IAuthorizationUtilsV0.sol",
+        "../authorizers/interfaces/IAuthorizerV0.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AuthorizationUtilsV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/WithdrawalUtilsV0.sol": {
+      "lastModificationDate": 1670343167943,
+      "contentHash": "de05e9cdc36786d4006b4c19fd362880",
+      "sourceName": "contracts/rrp/WithdrawalUtilsV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IWithdrawalUtilsV0.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WithdrawalUtilsV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/TemplateUtilsV0.sol": {
+      "lastModificationDate": 1670343167947,
+      "contentHash": "4903b5747290aaea44601bea98d5fdc5",
+      "sourceName": "contracts/rrp/TemplateUtilsV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/ITemplateUtilsV0.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TemplateUtilsV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/interfaces/IAirnodeRrpV0.sol": {
+      "lastModificationDate": 1670343167958,
+      "contentHash": "956233427805a2b9c588d50344326194",
+      "sourceName": "contracts/rrp/interfaces/IAirnodeRrpV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAuthorizationUtilsV0.sol",
+        "./ITemplateUtilsV0.sol",
+        "./IWithdrawalUtilsV0.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAirnodeRrpV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/authorizers/interfaces/IAuthorizerV0.sol": {
+      "lastModificationDate": 1670343167909,
+      "contentHash": "09be2dfecb6aeda837207f6e2e805af3",
+      "sourceName": "contracts/authorizers/interfaces/IAuthorizerV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAuthorizerV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/interfaces/IAuthorizationUtilsV0.sol": {
+      "lastModificationDate": 1670343167963,
+      "contentHash": "3db936311aea24d821820e27f83aa69e",
+      "sourceName": "contracts/rrp/interfaces/IAuthorizationUtilsV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAuthorizationUtilsV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/interfaces/IWithdrawalUtilsV0.sol": {
+      "lastModificationDate": 1670343167953,
+      "contentHash": "40b54b05ad57a662ff48f677c0dc413d",
+      "sourceName": "contracts/rrp/interfaces/IWithdrawalUtilsV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWithdrawalUtilsV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/interfaces/ITemplateUtilsV0.sol": {
+      "lastModificationDate": 1670343167961,
+      "contentHash": "098a8d98d08bc79a054b61e12e8983f9",
+      "sourceName": "contracts/rrp/interfaces/ITemplateUtilsV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ITemplateUtilsV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/requesters/RrpRequesterV0.sol": {
+      "lastModificationDate": 1670343167938,
+      "contentHash": "73496fe3ea176c4f71c00e5372c10a75",
+      "sourceName": "contracts/rrp/requesters/RrpRequesterV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IAirnodeRrpV0.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RrpRequesterV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/requesters/mock/MockRrpRequesterV0.sol": {
+      "lastModificationDate": 1670344518954,
+      "contentHash": "11e577d9e151bd632b2e6228b68175bf",
+      "sourceName": "contracts/rrp/requesters/mock/MockRrpRequesterV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../RrpRequesterV0.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MockRrpRequesterV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/requesters/RrpBeaconServerV0.sol": {
+      "lastModificationDate": 1670344525309,
+      "contentHash": "639e0bfd0f01d29abfe28bc725661727",
+      "sourceName": "contracts/rrp/requesters/RrpBeaconServerV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../whitelist/WhitelistWithManager.sol",
+        "./RrpRequesterV0.sol",
+        "./interfaces/IRrpBeaconServerV0.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "RrpBeaconServerV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/whitelist/WhitelistWithManager.sol": {
+      "lastModificationDate": 1670343168024,
+      "contentHash": "26cf7d2ea187c60d50e72bf2f543dd08",
+      "sourceName": "contracts/whitelist/WhitelistWithManager.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Whitelist.sol",
+        "./WhitelistRolesWithManager.sol",
+        "./interfaces/IWhitelistWithManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WhitelistWithManager"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/requesters/interfaces/IRrpBeaconServerV0.sol": {
+      "lastModificationDate": 1670343167942,
+      "contentHash": "351b37c9324c293de546a2af4f05c1aa",
+      "sourceName": "contracts/rrp/requesters/interfaces/IRrpBeaconServerV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../whitelist/interfaces/IWhitelistWithManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRrpBeaconServerV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/whitelist/Whitelist.sol": {
+      "lastModificationDate": 1670343168023,
+      "contentHash": "3fbb8d4fc4ef128d3ca777532dd1e525",
+      "sourceName": "contracts/whitelist/Whitelist.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Whitelist"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/whitelist/WhitelistRolesWithManager.sol": {
+      "lastModificationDate": 1670343168025,
+      "contentHash": "6808a5304f17d6f6e725f5f109325e42",
+      "sourceName": "contracts/whitelist/WhitelistRolesWithManager.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./WhitelistRoles.sol",
+        "../access-control-registry/AccessControlRegistryAdminnedWithManager.sol",
+        "./interfaces/IWhitelistRolesWithManager.sol",
+        "../access-control-registry/interfaces/IAccessControlRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WhitelistRolesWithManager"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/whitelist/interfaces/IWhitelistWithManager.sol": {
+      "lastModificationDate": 1670343168029,
+      "contentHash": "ab388ffa60491d0b22cbf07d4ef9d6d8",
+      "sourceName": "contracts/whitelist/interfaces/IWhitelistWithManager.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IWhitelistRolesWithManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWhitelistWithManager"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/access-control-registry/AccessControlRegistryAdminnedWithManager.sol": {
+      "lastModificationDate": 1670343167884,
+      "contentHash": "1ed391ad50d53c5a48ba28454cef4a0c",
+      "sourceName": "contracts/access-control-registry/AccessControlRegistryAdminnedWithManager.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AccessControlRegistryAdminned.sol",
+        "./interfaces/IAccessControlRegistryAdminnedWithManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlRegistryAdminnedWithManager"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/whitelist/WhitelistRoles.sol": {
+      "lastModificationDate": 1670343168027,
+      "contentHash": "ce4963a427b27e7aafad2d3e40709fee",
+      "sourceName": "contracts/whitelist/WhitelistRoles.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IWhitelistRoles.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WhitelistRoles"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/whitelist/interfaces/IWhitelistRolesWithManager.sol": {
+      "lastModificationDate": 1670343168033,
+      "contentHash": "d9f17d8caf2633382e7f2f7610fa0964",
+      "sourceName": "contracts/whitelist/interfaces/IWhitelistRolesWithManager.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IWhitelistRoles.sol",
+        "../../access-control-registry/interfaces/IAccessControlRegistryAdminnedWithManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWhitelistRolesWithManager"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/access-control-registry/AccessControlRegistryAdminned.sol": {
+      "lastModificationDate": 1670343167887,
+      "contentHash": "f7efe8c13c154840eb035d47a1e81668",
+      "sourceName": "contracts/access-control-registry/AccessControlRegistryAdminned.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Multicall.sol",
+        "./RoleDeriver.sol",
+        "./AccessControlRegistryUser.sol",
+        "./interfaces/IAccessControlRegistryAdminned.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlRegistryAdminned"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/access-control-registry/interfaces/IAccessControlRegistryAdminnedWithManager.sol": {
+      "lastModificationDate": 1670343167890,
+      "contentHash": "1ad72ebf599570ef0c5b85d676e17aa5",
+      "sourceName": "contracts/access-control-registry/interfaces/IAccessControlRegistryAdminnedWithManager.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControlRegistryAdminned.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControlRegistryAdminnedWithManager"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/access-control-registry/AccessControlRegistryUser.sol": {
+      "lastModificationDate": 1670343167886,
+      "contentHash": "f9223c87e2950573a81704bb3e778442",
+      "sourceName": "contracts/access-control-registry/AccessControlRegistryUser.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IAccessControlRegistry.sol",
+        "./interfaces/IAccessControlRegistryUser.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlRegistryUser"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/access-control-registry/interfaces/IAccessControlRegistryAdminned.sol": {
+      "lastModificationDate": 1670343167889,
+      "contentHash": "fbf1d40366c03afb1eab4ff548e9f0ab",
+      "sourceName": "contracts/access-control-registry/interfaces/IAccessControlRegistryAdminned.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControlRegistryUser.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControlRegistryAdminned"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/access-control-registry/interfaces/IAccessControlRegistryUser.sol": {
+      "lastModificationDate": 1670343167891,
+      "contentHash": "e1c24baf4e34d523cb5dff6bd37d93a7",
+      "sourceName": "contracts/access-control-registry/interfaces/IAccessControlRegistryUser.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControlRegistryUser"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/whitelist/interfaces/IWhitelistRoles.sol": {
+      "lastModificationDate": 1670343168032,
+      "contentHash": "d62667d3a7cb82cde7e3653e4f8ec1e0",
+      "sourceName": "contracts/whitelist/interfaces/IWhitelistRoles.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWhitelistRoles"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/whitelist/interfaces/IWhitelistRolesWithAirnode.sol": {
+      "lastModificationDate": 1670343168031,
+      "contentHash": "41cf9d9fd280f26b47dfc27ad44c5b57",
+      "sourceName": "contracts/whitelist/interfaces/IWhitelistRolesWithAirnode.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IWhitelistRoles.sol",
+        "../../access-control-registry/interfaces/IAccessControlRegistryAdminned.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWhitelistRolesWithAirnode"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/authorizers/RequesterAuthorizer.sol": {
+      "lastModificationDate": 1670343167906,
+      "contentHash": "a313b89d8942bf375318649afd7d23d3",
+      "sourceName": "contracts/authorizers/RequesterAuthorizer.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../whitelist/Whitelist.sol",
+        "./interfaces/IRequesterAuthorizer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RequesterAuthorizer"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/authorizers/interfaces/IRequesterAuthorizer.sol": {
+      "lastModificationDate": 1670343167912,
+      "contentHash": "bea6c6ac4e320f0047d557efd6a9219c",
+      "sourceName": "contracts/authorizers/interfaces/IRequesterAuthorizer.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAuthorizerV0.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRequesterAuthorizer"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/authorizers/RequesterAuthorizerWithManager.sol": {
+      "lastModificationDate": 1670344505391,
+      "contentHash": "9c87cb0e80f803bd0466b8e7c2c51335",
+      "sourceName": "contracts/authorizers/RequesterAuthorizerWithManager.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../whitelist/WhitelistRolesWithManager.sol",
+        "./RequesterAuthorizer.sol",
+        "./interfaces/IRequesterAuthorizerWithManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "RequesterAuthorizerWithManager"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/authorizers/interfaces/IRequesterAuthorizerWithManager.sol": {
+      "lastModificationDate": 1670343167911,
+      "contentHash": "0ad691afa15408f0d517aa6cbb1c5d60",
+      "sourceName": "contracts/authorizers/interfaces/IRequesterAuthorizerWithManager.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../whitelist/interfaces/IWhitelistRolesWithManager.sol",
+        "./IRequesterAuthorizer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRequesterAuthorizerWithManager"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/authorizers/interfaces/IRequesterAuthorizerWithAirnode.sol": {
+      "lastModificationDate": 1670343167910,
+      "contentHash": "a6a161bebbb0df366fefb8d3cbddaa16",
+      "sourceName": "contracts/authorizers/interfaces/IRequesterAuthorizerWithAirnode.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../whitelist/interfaces/IWhitelistRolesWithAirnode.sol",
+        "./IRequesterAuthorizer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRequesterAuthorizerWithAirnode"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/authorizers/RequesterAuthorizerWithAirnode.sol": {
+      "lastModificationDate": 1670344501313,
+      "contentHash": "d7b64d970994b8cb20b8bbad019d461a",
+      "sourceName": "contracts/authorizers/RequesterAuthorizerWithAirnode.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../whitelist/WhitelistRolesWithAirnode.sol",
+        "./RequesterAuthorizer.sol",
+        "./interfaces/IRequesterAuthorizerWithAirnode.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "RequesterAuthorizerWithAirnode"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/whitelist/WhitelistRolesWithAirnode.sol": {
+      "lastModificationDate": 1670343168022,
+      "contentHash": "78f4146e07b7738843454de5e4c61924",
+      "sourceName": "contracts/whitelist/WhitelistRolesWithAirnode.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./WhitelistRoles.sol",
+        "../access-control-registry/AccessControlRegistryAdminned.sol",
+        "./interfaces/IWhitelistRolesWithAirnode.sol",
+        "../access-control-registry/interfaces/IAccessControlRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WhitelistRolesWithAirnode"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/authorizers/mock/MockAuthorizerAlwaysTrueV0.sol": {
+      "lastModificationDate": 1670344491814,
+      "contentHash": "e7ad688f8be5c8ade822b7707cd812b0",
+      "sourceName": "contracts/authorizers/mock/MockAuthorizerAlwaysTrueV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IAuthorizerV0.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MockAuthorizerAlwaysTrueV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/authorizers/mock/MockAuthorizerAlwaysFalseV0.sol": {
+      "lastModificationDate": 1670344484527,
+      "contentHash": "ce0b2d545e0120a092595850f2e97105",
+      "sourceName": "contracts/authorizers/mock/MockAuthorizerAlwaysFalseV0.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IAuthorizerV0.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MockAuthorizerAlwaysFalseV0"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/utils/mock/MockCallForwarderTarget.sol": {
+      "lastModificationDate": 1670344551467,
+      "contentHash": "5cda90e9e62c52996c80f40bd0ba15cc",
+      "sourceName": "contracts/utils/mock/MockCallForwarderTarget.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MockCallForwarderTarget"
+      ]
+    },
+    "/Users/blackhacker/Desktop/ZKZKZK/greeter-example/contracts/rrp/requesters/Requester.sol": {
+      "lastModificationDate": 1670419313378,
+      "contentHash": "4c395826eb79403a51f3fb030ae9f2e1",
+      "sourceName": "contracts/rrp/requesters/Requester.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.2.0",
+          "compilerSource": "docker",
+          "settings": {
+            "compilerPath": "",
+            "experimental": {
+              "dockerImage": "matterlabs/zksolc",
+              "tag": "v1.2.0"
+            },
+            "optimizer": {
+              "enabled": true
+            }
+          }
+        }
+      },
+      "imports": [
+        "./RrpRequesterV0.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "Requester"
+      ]
+    }
+  }
+}
