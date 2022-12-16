@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@api3/airnode-admin": "^0.9.1",
-    "@openzeppelin/contracts": "^4.8.0"
+    "@openzeppelin/contracts": "^4.8.0",
+    "ethereum-hdwallet": "^0.1.2"
   }
 }
