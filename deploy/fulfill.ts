@@ -1,4 +1,4 @@
-import { utils, Wallet } from "zksync-web3";
+import { Provider, utils, Wallet } from "zksync-web3";
 import * as ethers from "ethers";
 import { deriveSponsorWalletAddress, deriveAirnodeXpub } from '@api3/airnode-admin';
 import { HardhatRuntimeEnvironment } from "hardhat/types";
@@ -7,10 +7,11 @@ import { getDeployedContracts } from "zksync-web3/build/src/utils";
 const HDWallet = require('ethereum-hdwallet')
 
 // An example that will call the Requester Contract and will make a full request
+const provider = new Provider("https://zksync2-testnet.zksync.dev");
 
 // DERIVING THE PATH OF THE SPONSOR WALLET
 // ADD IN THE ADDRESS OF THE REQUESTER CONTRACT
-const requesterAddressTest = "0x52a5CCA8b994C0BAb156425d93D966C5d23Faca6";
+const requesterAddressTest = "0x03A80cE62615F2d0C942EC283508C27729585988";
 const deriveWalletPathFromSponsorAddress = (sponsorAddress: string, protocolId) => {
     const sponsorAddressBN = ethers.BigNumber.from(ethers.utils.getAddress(sponsorAddress));
     const paths : string[] = [];
@@ -23,9 +24,9 @@ const deriveWalletPathFromSponsorAddress = (sponsorAddress: string, protocolId) 
 //
 
 // Getting the private key of the sponsor Wallet from the Airnode Mnemonic
-const hdwallet = HDWallet.fromMnemonic("ADD-YOUR-MNEMONIC")
+const hdwallet = HDWallet.fromMnemonic("")
 console.log(`0x${hdwallet.derive(`m/44'/60'/0'/${deriveWalletPathFromSponsorAddress(requesterAddressTest, 1)}`).getAddress().toString('hex')}`)
-const PKEYsponsorWalletAddress = (hdwallet.derive(`m/44'/60'/0'/${deriveWalletPathFromSponsorAddress(requesterAddressTest, 1)}`).getPrivateKey().toString('hex'))
+const PKEYsponsorWallet = (hdwallet.derive(`m/44'/60'/0'/${deriveWalletPathFromSponsorAddress(requesterAddressTest, 1)}`).getPrivateKey().toString('hex'))
 
 // An example of a deploy script that will deploy and call a simple contract.
 export default async function (hre: HardhatRuntimeEnvironment) {
@@ -33,16 +34,24 @@ console.log(`Running deploy script for the Requester contract`);
 
 // Initialize the wallets.
 
-    const sponsorWallet = new Wallet(PKEYsponsorWalletAddress)
-    const wallet = new Wallet("PKEY");
-  
+    const sponsorWallet = new Wallet(PKEYsponsorWallet)
+    const signer = provider.getSigner(sponsorWallet.address)
+    const wallet = new Wallet("");
+    const signer2 = provider.getSigner(wallet.address)
 // Create deployer object and load the artifact of the contract we want to deploy.
     const deployer = new Deployer(hre, sponsorWallet);
     const requesterArtifact = await deployer.loadArtifact("Requester");
+
+// Fulfill Function ID
+    const iface = new ethers.utils.Interface(requesterArtifact.abi);
+    console.log("Interface works");
+    const fuID = iface.getSighash("fulfill");
+    console.log(fuID);
+
     const rrp = await deployer.loadArtifact("AirnodeRrpV0")
     const rrpAddress = "0xbD5263fa8c93Deb3417d49E63b444cBd541922FD";
     const _rrpContract = hre.artifacts.readArtifactSync("AirnodeRrpV0")
-    const rrpContract = new ethers.Contract(rrpAddress, _rrpContract.abi, wallet);
+    const rrpContract = new ethers.Contract(rrpAddress, _rrpContract.abi, signer2);
 //   const requesterContract = await deployer.deploy(requesterArtifact, [rrpAddress]);
 //   const requesterAddress = requesterContract.address;
 //   console.log(`${requesterArtifact.contractName} was deployed to ${requesterAddress}`);
@@ -58,7 +67,7 @@ console.log(`Running deploy script for the Requester contract`);
 
     const sample_data = 123;
     // ADD IN YOUR REQUEST ID
-    const requestId = '0xdb76575b350b64e399304ad80da1ab6ff42b7a6ef2ca3353fc72ac9041cc9f74';
+    const requestId = '0x4943cee6e7f0160b0fee795bfdb190e7437f73c7bb227bbfc655a58b187aa163';
     const data = ethers.utils.defaultAbiCoder.encode(['int256'], [sample_data]);
     console.log(`Sample Data Encoded: ${data}`);
     async function getSignature(){
@@ -67,7 +76,7 @@ console.log(`Running deploy script for the Requester contract`);
             ethers.utils.keccak256(
                 ethers.utils.solidityPack(['bytes32', 'uint256'], [requestId, data])
             )
-            )
+            ),
         );
       return signature;
         }
@@ -75,7 +84,7 @@ console.log(`Running deploy script for the Requester contract`);
     console.log(`Signature: ${signature}`)
 
     // NEED TO FIGURE OUT THE FUNCTION ID
-    const fulfillFunctionId = "";
+    const fulfillFunctionId = fuID;
 
     const fulfill = await rrpContract.fulfill(
         requestId,
@@ -87,5 +96,8 @@ console.log(`Running deploy script for the Requester contract`);
         // encode the value in bytes32
         ,
     );
-    await fulfill.wait();
+    await sponsorWallet.sendTransaction(fulfill);
+
+    // console.log(provider.getTransactionReceipt(fulfill.hash))
+
 }
