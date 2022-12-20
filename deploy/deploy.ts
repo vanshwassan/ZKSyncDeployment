@@ -5,27 +5,26 @@ import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { Deployer } from "@matterlabs/hardhat-zksync-deploy";
 const HDWallet = require('ethereum-hdwallet')
 
-// An example that will call the Requester Contract and will make a full request
+// An example that will deploy and call the Requester Contract and will make a full request
 
-// var provider = new ethers.providers.InfuraProvider('Goerli');
 const provider = new Provider("https://zksync2-testnet.zksync.dev");
 
-// An example of a deploy script that will deploy and call a simple contract.
 export default async function (hre: HardhatRuntimeEnvironment) {
 console.log(`Running deploy script for the Requester contract`);
-// const rrpAddress = "0xbD5263fa8c93Deb3417d49E63b444cBd541922FD";
+// const rrpAddress = "0x7591E3D2680F8036e60e6858Bedfc0a9d14d380f";
 
-const wallet = new Wallet("");
+const wallet = new Wallet("<PKEY>", provider);
 
 // Create deployer object and load the artifact of the contract we want to deploy.
     const deployer = new Deployer(hre, wallet);
     const requesterArtifact = await deployer.loadArtifact("Requester");
-    // const airnodeRRP = await deployer.loadArtifact("AirnodeRrpV0");
 
 // rrp
-const rrpAddress = "0xbD5263fa8c93Deb3417d49E63b444cBd541922FD";
+const rrpAddress = "0x7591E3D2680F8036e60e6858Bedfc0a9d14d380f";
 const _rrpContract = hre.artifacts.readArtifactSync("AirnodeRrpV0")
 const rrpContract = new ethers.Contract(rrpAddress, _rrpContract.abi, wallet);
+const rrpIface = new ethers.utils.Interface(_rrpContract.abi)
+
 
   const requesterContract = await deployer.deploy(requesterArtifact, [rrpAddress]);
   const requesterAddress = requesterContract.address;
@@ -57,8 +56,19 @@ const rrpContract = new ethers.Contract(rrpAddress, _rrpContract.abi, wallet);
         sponsorWalletAddress,
         encodedParams
     );
-await makeReq.wait();
+      await makeReq.wait(10)
+    console.log(makeReq);
+// await makeReq.wait();
 
-console.log(provider.getTransactionReceipt(makeReq.hash))
+return new Promise((resolve) =>
+provider.once(makeReq.hash, (tx) => {
+  const parsedLog = rrpIface.parseLog(tx.logs[0]);
+  console.log(parsedLog.args.requestId);
+          resolve(parsedLog.args.requestId);
+})
+);
+
+
+// console.log(provider.getTransactionReceipt(makeReq.hash))
 
 }

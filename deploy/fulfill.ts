@@ -21,10 +21,9 @@ const deriveWalletPathFromSponsorAddress = (sponsorAddress: string, protocolId) 
     }
     return `${protocolId}/${paths.join('/')}`;
   };
-//
 
 // Getting the private key of the sponsor Wallet from the Airnode Mnemonic
-const hdwallet = HDWallet.fromMnemonic("")
+const hdwallet = HDWallet.fromMnemonic("<PKEY>")
 console.log(`0x${hdwallet.derive(`m/44'/60'/0'/${deriveWalletPathFromSponsorAddress(requesterAddressTest, 1)}`).getAddress().toString('hex')}`)
 const PKEYsponsorWallet = (hdwallet.derive(`m/44'/60'/0'/${deriveWalletPathFromSponsorAddress(requesterAddressTest, 1)}`).getPrivateKey().toString('hex'))
 
@@ -49,6 +48,8 @@ console.log(`Running deploy script for the Requester contract`);
     console.log(fuID);
 
     const rrp = await deployer.loadArtifact("AirnodeRrpV0")
+    const rrpIface = new ethers.utils.Interface(rrp.abi)
+
     const rrpAddress = "0xbD5263fa8c93Deb3417d49E63b444cBd541922FD";
     const _rrpContract = hre.artifacts.readArtifactSync("AirnodeRrpV0")
     const rrpContract = new ethers.Contract(rrpAddress, _rrpContract.abi, signer2);
