@@ -63,7 +63,7 @@ var i;
 for (i = 0; i < 1; i++) {
 
    console.log(END_BLOCK);
-      const events = await airnodeContract.getPastEvents("AllEvents",
+      const events = await airnodeContract.events.allEvents("AllEvents",
                     {
 
               fromBlock: END_BLOCK -1000,
@@ -78,7 +78,7 @@ for (i = 0; i < 1; i++) {
 //      const requestId = '0x7d3d5dc246040d62a917ee5e7cb26e3fcb901fb821f92a09c694171c9cd840ab';
 //  console.log(`${coinId} price is ${(await exampleClient.fulfilledData(requestId)) / 1e6} USD`);
 }
-console.log(airnodeContract.events.allEvents())
+// console.log(airnodeContract.events.allEvents())
 
 main()
   .then(() => process.exit(0))
